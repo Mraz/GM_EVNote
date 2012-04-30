@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		667F70F01512D0F900029BB8 /* thumbnail_dummy.png in Resources */ = {isa = PBXBuildFile; fileRef = 667F70EF1512D0F900029BB8 /* thumbnail_dummy.png */; };
+		66A02E2C1513259A006A706B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A02E2B1513259A006A706B /* icon@2x.png */; };
+		66A02E2F151325A3006A706B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A02E2E151325A3006A706B /* icon.png */; };
+		66CA2053150FAA7800913A85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CA2052150FAA7800913A85 /* UIKit.framework */; };
+		66CA2055150FAA7800913A85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CA2054150FAA7800913A85 /* Foundation.framework */; };
+		66CA2057150FAA7800913A85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CA2056150FAA7800913A85 /* CoreGraphics.framework */; };
+		66CA205D150FAA7800913A85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66CA205B150FAA7800913A85 /* InfoPlist.strings */; };
+		66CA205F150FAA7800913A85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA205E150FAA7800913A85 /* main.m */; };
+		66CA2063150FAA7800913A85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA2062150FAA7800913A85 /* AppDelegate.m */; };
+		66CA20B1150FB0F500913A85 /* ENManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20B0150FB0F500913A85 /* ENManager.m */; };
+		66CA20E4150FB1CB00913A85 /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20CC150FB1CB00913A85 /* TBinaryProtocol.m */; };
+		66CA20E5150FB1CB00913A85 /* TProtocolException.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20CF150FB1CB00913A85 /* TProtocolException.m */; };
+		66CA20E6150FB1CB00913A85 /* TProtocolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20D2150FB1CB00913A85 /* TProtocolUtil.m */; };
+		66CA20E7150FB1CB00913A85 /* TApplicationException.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20D5150FB1CB00913A85 /* TApplicationException.m */; };
+		66CA20E8150FB1CB00913A85 /* TException.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20D7150FB1CB00913A85 /* TException.m */; };
+		66CA20E9150FB1CB00913A85 /* THTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20DC150FB1CB00913A85 /* THTTPClient.m */; };
+		66CA20EA150FB1CB00913A85 /* TMemoryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20DE150FB1CB00913A85 /* TMemoryBuffer.m */; };
+		66CA20EB150FB1CB00913A85 /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20E1150FB1CB00913A85 /* TTransportException.m */; };
+		66CA20EC150FB1CB00913A85 /* TSharedProcessorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20E3150FB1CB00913A85 /* TSharedProcessorFactory.m */; };
+		66CA20F8150FB23100913A85 /* EDAMLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20EF150FB23100913A85 /* EDAMLimits.m */; };
+		66CA20F9150FB23100913A85 /* Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20F1150FB23100913A85 /* Errors.m */; };
+		66CA20FA150FB23100913A85 /* NoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20F3150FB23100913A85 /* NoteStore.m */; };
+		66CA20FB150FB23100913A85 /* Types.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20F5150FB23100913A85 /* Types.m */; };
+		66CA20FC150FB23100913A85 /* UserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20F7150FB23100913A85 /* UserStore.m */; };
+		66CA20FF150FB25C00913A85 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA20FE150FB25C00913A85 /* LoginViewController.m */; };
+		66CA211C150FB84B00913A85 /* NotebookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA211B150FB84B00913A85 /* NotebookListViewController.m */; };
+		66CA2122150FC11500913A85 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA2121150FC11500913A85 /* CustomCell.m */; };
+		66CA2124150FC13000913A85 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CA2123150FC13000913A85 /* CustomCell.xib */; };
+		66CA2127150FC3C200913A85 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA2126150FC3C200913A85 /* NoteListViewController.m */; };
+		66CA212A150FC74000913A85 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CA2129150FC73F00913A85 /* NoteViewController.m */; };
+		66D301E71511F5D200377D6B /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D301E61511F5D200377D6B /* NSData+MD5.m */; };
+		66D301F815120F2400377D6B /* cameraBtn_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301E815120F2400377D6B /* cameraBtn_s@2x.png */; };
+		66D301F915120F2400377D6B /* cameraBtn_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301E915120F2400377D6B /* cameraBtn_n@2x.png */; };
+		66D301FA15120F2400377D6B /* cameraBtn_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301EA15120F2400377D6B /* cameraBtn_s.png */; };
+		66D301FB15120F2400377D6B /* cameraBtn_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301EB15120F2400377D6B /* cameraBtn_n.png */; };
+		66D301FC15120F2400377D6B /* titleLabelBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301EC15120F2400377D6B /* titleLabelBg@2x.png */; };
+		66D301FD15120F2400377D6B /* titleLabelBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301ED15120F2400377D6B /* titleLabelBg.png */; };
+		66D301FF15120F2400377D6B /* thumbnailMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301EF15120F2400377D6B /* thumbnailMask@2x.png */; };
+		66D3020015120F2400377D6B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301F015120F2400377D6B /* logo.png */; };
+		66D3020115120F2400377D6B /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301F115120F2400377D6B /* logo@2x.png */; };
+		66D3020215120F2400377D6B /* signInBtn_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301F215120F2400377D6B /* signInBtn_s@2x.png */; };
+		66D3020315120F2400377D6B /* signInBtn_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301F315120F2400377D6B /* signInBtn_n@2x.png */; };
+		66D3020415120F2400377D6B /* signInBtn_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301F415120F2400377D6B /* signInBtn_s.png */; };
+		66D3020515120F2400377D6B /* signInBtn_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301F515120F2400377D6B /* signInBtn_n.png */; };
+		66D3020615120F2400377D6B /* textLabelBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301F615120F2400377D6B /* textLabelBg@2x.png */; };
+		66D3020715120F2400377D6B /* textLabelBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D301F715120F2400377D6B /* textLabelBg.png */; };
+		66D30209151213BB00377D6B /* thumbnailMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D30208151213BB00377D6B /* thumbnailMask.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		667F70EF1512D0F900029BB8 /* thumbnail_dummy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail_dummy.png; sourceTree = "<group>"; };
+		66A02E2B1513259A006A706B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		66A02E2E151325A3006A706B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		66CA204E150FAA7800913A85 /* GM_EVNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GM_EVNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CA2052150FAA7800913A85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66CA2054150FAA7800913A85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66CA2056150FAA7800913A85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66CA205A150FAA7800913A85 /* GM_EVNote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GM_EVNote-Info.plist"; sourceTree = "<group>"; };
+		66CA205C150FAA7800913A85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66CA205E150FAA7800913A85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66CA2060150FAA7800913A85 /* GM_EVNote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GM_EVNote-Prefix.pch"; sourceTree = "<group>"; };
+		66CA2061150FAA7800913A85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66CA2062150FAA7800913A85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66CA209A150FAD2300913A85 /* ENManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENManager.h; sourceTree = "<group>"; };
+		66CA20B0150FB0F500913A85 /* ENManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENManager.m; sourceTree = "<group>"; };
+		66CA20CB150FB1CB00913A85 /* TBinaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBinaryProtocol.h; sourceTree = "<group>"; };
+		66CA20CC150FB1CB00913A85 /* TBinaryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBinaryProtocol.m; sourceTree = "<group>"; };
+		66CA20CD150FB1CB00913A85 /* TProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocol.h; sourceTree = "<group>"; };
+		66CA20CE150FB1CB00913A85 /* TProtocolException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolException.h; sourceTree = "<group>"; };
+		66CA20CF150FB1CB00913A85 /* TProtocolException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolException.m; sourceTree = "<group>"; };
+		66CA20D0150FB1CB00913A85 /* TProtocolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolFactory.h; sourceTree = "<group>"; };
+		66CA20D1150FB1CB00913A85 /* TProtocolUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolUtil.h; sourceTree = "<group>"; };
+		66CA20D2150FB1CB00913A85 /* TProtocolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolUtil.m; sourceTree = "<group>"; };
+		66CA20D4150FB1CB00913A85 /* TApplicationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TApplicationException.h; sourceTree = "<group>"; };
+		66CA20D5150FB1CB00913A85 /* TApplicationException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TApplicationException.m; sourceTree = "<group>"; };
+		66CA20D6150FB1CB00913A85 /* TException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TException.h; sourceTree = "<group>"; };
+		66CA20D7150FB1CB00913A85 /* TException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TException.m; sourceTree = "<group>"; };
+		66CA20D8150FB1CB00913A85 /* TProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessor.h; sourceTree = "<group>"; };
+		66CA20D9150FB1CB00913A85 /* TProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessorFactory.h; sourceTree = "<group>"; };
+		66CA20DB150FB1CB00913A85 /* THTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTTPClient.h; sourceTree = "<group>"; };
+		66CA20DC150FB1CB00913A85 /* THTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTTPClient.m; sourceTree = "<group>"; };
+		66CA20DD150FB1CB00913A85 /* TMemoryBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMemoryBuffer.h; sourceTree = "<group>"; };
+		66CA20DE150FB1CB00913A85 /* TMemoryBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMemoryBuffer.m; sourceTree = "<group>"; };
+		66CA20DF150FB1CB00913A85 /* TTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransport.h; sourceTree = "<group>"; };
+		66CA20E0150FB1CB00913A85 /* TTransportException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransportException.h; sourceTree = "<group>"; };
+		66CA20E1150FB1CB00913A85 /* TTransportException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransportException.m; sourceTree = "<group>"; };
+		66CA20E2150FB1CB00913A85 /* TSharedProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSharedProcessorFactory.h; sourceTree = "<group>"; };
+		66CA20E3150FB1CB00913A85 /* TSharedProcessorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSharedProcessorFactory.m; sourceTree = "<group>"; };
+		66CA20EE150FB23100913A85 /* EDAMLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMLimits.h; sourceTree = "<group>"; };
+		66CA20EF150FB23100913A85 /* EDAMLimits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMLimits.m; sourceTree = "<group>"; };
+		66CA20F0150FB23100913A85 /* Errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Errors.h; sourceTree = "<group>"; };
+		66CA20F1150FB23100913A85 /* Errors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Errors.m; sourceTree = "<group>"; };
+		66CA20F2150FB23100913A85 /* NoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteStore.h; sourceTree = "<group>"; };
+		66CA20F3150FB23100913A85 /* NoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteStore.m; sourceTree = "<group>"; };
+		66CA20F4150FB23100913A85 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		66CA20F5150FB23100913A85 /* Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Types.m; sourceTree = "<group>"; };
+		66CA20F6150FB23100913A85 /* UserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStore.h; sourceTree = "<group>"; };
+		66CA20F7150FB23100913A85 /* UserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStore.m; sourceTree = "<group>"; };
+		66CA20FD150FB25C00913A85 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		66CA20FE150FB25C00913A85 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		66CA2114150FB5FB00913A85 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		66CA211A150FB84B00913A85 /* NotebookListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookListViewController.h; sourceTree = "<group>"; };
+		66CA211B150FB84B00913A85 /* NotebookListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookListViewController.m; sourceTree = "<group>"; };
+		66CA2120150FC11500913A85 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		66CA2121150FC11500913A85 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		66CA2123150FC13000913A85 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		66CA2125150FC3C200913A85 /* NoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
+		66CA2126150FC3C200913A85 /* NoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListViewController.m; sourceTree = "<group>"; };
+		66CA2128150FC73F00913A85 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
+		66CA2129150FC73F00913A85 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
+		66D301E51511F5D200377D6B /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
+		66D301E61511F5D200377D6B /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
+		66D301E815120F2400377D6B /* cameraBtn_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraBtn_s@2x.png"; sourceTree = "<group>"; };
+		66D301E915120F2400377D6B /* cameraBtn_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraBtn_n@2x.png"; sourceTree = "<group>"; };
+		66D301EA15120F2400377D6B /* cameraBtn_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraBtn_s.png; sourceTree = "<group>"; };
+		66D301EB15120F2400377D6B /* cameraBtn_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraBtn_n.png; sourceTree = "<group>"; };
+		66D301EC15120F2400377D6B /* titleLabelBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titleLabelBg@2x.png"; sourceTree = "<group>"; };
+		66D301ED15120F2400377D6B /* titleLabelBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleLabelBg.png; sourceTree = "<group>"; };
+		66D301EF15120F2400377D6B /* thumbnailMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnailMask@2x.png"; sourceTree = "<group>"; };
+		66D301F015120F2400377D6B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		66D301F115120F2400377D6B /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		66D301F215120F2400377D6B /* signInBtn_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signInBtn_s@2x.png"; sourceTree = "<group>"; };
+		66D301F315120F2400377D6B /* signInBtn_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signInBtn_n@2x.png"; sourceTree = "<group>"; };
+		66D301F415120F2400377D6B /* signInBtn_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signInBtn_s.png; sourceTree = "<group>"; };
+		66D301F515120F2400377D6B /* signInBtn_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signInBtn_n.png; sourceTree = "<group>"; };
+		66D301F615120F2400377D6B /* textLabelBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textLabelBg@2x.png"; sourceTree = "<group>"; };
+		66D301F715120F2400377D6B /* textLabelBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textLabelBg.png; sourceTree = "<group>"; };
+		66D30208151213BB00377D6B /* thumbnailMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnailMask.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66CA204B150FAA7800913A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CA2053150FAA7800913A85 /* UIKit.framework in Frameworks */,
+				66CA2055150FAA7800913A85 /* Foundation.framework in Frameworks */,
+				66CA2057150FAA7800913A85 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		667F70F21512DCD400029BB8 /* Evernote */ = {
+			isa = PBXGroup;
+			children = (
+				66CA209A150FAD2300913A85 /* ENManager.h */,
+				66CA20B0150FB0F500913A85 /* ENManager.m */,
+				66CA20ED150FB23100913A85 /* edam */,
+				66CA20C9150FB1CB00913A85 /* thrift */,
+			);
+			name = Evernote;
+			sourceTree = "<group>";
+		};
+		66CA2043150FAA7800913A85 = {
+			isa = PBXGroup;
+			children = (
+				66CA2058150FAA7800913A85 /* EvernoteSample */,
+				66CA2051150FAA7800913A85 /* Frameworks */,
+				66CA204F150FAA7800913A85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66CA204F150FAA7800913A85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66CA204E150FAA7800913A85 /* GM_EVNote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66CA2051150FAA7800913A85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66CA2052150FAA7800913A85 /* UIKit.framework */,
+				66CA2054150FAA7800913A85 /* Foundation.framework */,
+				66CA2056150FAA7800913A85 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66CA2058150FAA7800913A85 /* EvernoteSample */ = {
+			isa = PBXGroup;
+			children = (
+				667F70F21512DCD400029BB8 /* Evernote */,
+				66D301E41511F5D200377D6B /* tool */,
+				66CA212B150FF0D200913A85 /* SubClass */,
+				66CA2061150FAA7800913A85 /* AppDelegate.h */,
+				66CA2062150FAA7800913A85 /* AppDelegate.m */,
+				66CA20FD150FB25C00913A85 /* LoginViewController.h */,
+				66CA20FE150FB25C00913A85 /* LoginViewController.m */,
+				66CA211A150FB84B00913A85 /* NotebookListViewController.h */,
+				66CA211B150FB84B00913A85 /* NotebookListViewController.m */,
+				66CA2125150FC3C200913A85 /* NoteListViewController.h */,
+				66CA2126150FC3C200913A85 /* NoteListViewController.m */,
+				66CA2128150FC73F00913A85 /* NoteViewController.h */,
+				66CA2129150FC73F00913A85 /* NoteViewController.m */,
+				66CA2119150FB76600913A85 /* Image */,
+				66CA2059150FAA7800913A85 /* Supporting Files */,
+			);
+			path = EvernoteSample;
+			sourceTree = "<group>";
+		};
+		66CA2059150FAA7800913A85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66CA205A150FAA7800913A85 /* GM_EVNote-Info.plist */,
+				66CA205B150FAA7800913A85 /* InfoPlist.strings */,
+				66CA205E150FAA7800913A85 /* main.m */,
+				66CA2060150FAA7800913A85 /* GM_EVNote-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66CA20C9150FB1CB00913A85 /* thrift */ = {
+			isa = PBXGroup;
+			children = (
+				66CA20CA150FB1CB00913A85 /* protocol */,
+				66CA20D3150FB1CB00913A85 /* server */,
+				66CA20D4150FB1CB00913A85 /* TApplicationException.h */,
+				66CA20D5150FB1CB00913A85 /* TApplicationException.m */,
+				66CA20D6150FB1CB00913A85 /* TException.h */,
+				66CA20D7150FB1CB00913A85 /* TException.m */,
+				66CA20D8150FB1CB00913A85 /* TProcessor.h */,
+				66CA20D9150FB1CB00913A85 /* TProcessorFactory.h */,
+				66CA20DA150FB1CB00913A85 /* transport */,
+				66CA20E2150FB1CB00913A85 /* TSharedProcessorFactory.h */,
+				66CA20E3150FB1CB00913A85 /* TSharedProcessorFactory.m */,
+			);
+			path = thrift;
+			sourceTree = "<group>";
+		};
+		66CA20CA150FB1CB00913A85 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				66CA20CB150FB1CB00913A85 /* TBinaryProtocol.h */,
+				66CA20CC150FB1CB00913A85 /* TBinaryProtocol.m */,
+				66CA20CD150FB1CB00913A85 /* TProtocol.h */,
+				66CA20CE150FB1CB00913A85 /* TProtocolException.h */,
+				66CA20CF150FB1CB00913A85 /* TProtocolException.m */,
+				66CA20D0150FB1CB00913A85 /* TProtocolFactory.h */,
+				66CA20D1150FB1CB00913A85 /* TProtocolUtil.h */,
+				66CA20D2150FB1CB00913A85 /* TProtocolUtil.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		66CA20D3150FB1CB00913A85 /* server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		66CA20DA150FB1CB00913A85 /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				66CA20DB150FB1CB00913A85 /* THTTPClient.h */,
+				66CA20DC150FB1CB00913A85 /* THTTPClient.m */,
+				66CA20DD150FB1CB00913A85 /* TMemoryBuffer.h */,
+				66CA20DE150FB1CB00913A85 /* TMemoryBuffer.m */,
+				66CA20DF150FB1CB00913A85 /* TTransport.h */,
+				66CA20E0150FB1CB00913A85 /* TTransportException.h */,
+				66CA20E1150FB1CB00913A85 /* TTransportException.m */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		66CA20ED150FB23100913A85 /* edam */ = {
+			isa = PBXGroup;
+			children = (
+				66CA20EE150FB23100913A85 /* EDAMLimits.h */,
+				66CA20EF150FB23100913A85 /* EDAMLimits.m */,
+				66CA20F0150FB23100913A85 /* Errors.h */,
+				66CA20F1150FB23100913A85 /* Errors.m */,
+				66CA20F2150FB23100913A85 /* NoteStore.h */,
+				66CA20F3150FB23100913A85 /* NoteStore.m */,
+				66CA20F4150FB23100913A85 /* Types.h */,
+				66CA20F5150FB23100913A85 /* Types.m */,
+				66CA20F6150FB23100913A85 /* UserStore.h */,
+				66CA20F7150FB23100913A85 /* UserStore.m */,
+			);
+			path = edam;
+			sourceTree = "<group>";
+		};
+		66CA2119150FB76600913A85 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				66A02E2E151325A3006A706B /* icon.png */,
+				66A02E2B1513259A006A706B /* icon@2x.png */,
+				667F70EF1512D0F900029BB8 /* thumbnail_dummy.png */,
+				66D301E815120F2400377D6B /* cameraBtn_s@2x.png */,
+				66D301E915120F2400377D6B /* cameraBtn_n@2x.png */,
+				66D301EA15120F2400377D6B /* cameraBtn_s.png */,
+				66D301EB15120F2400377D6B /* cameraBtn_n.png */,
+				66D301EC15120F2400377D6B /* titleLabelBg@2x.png */,
+				66D301ED15120F2400377D6B /* titleLabelBg.png */,
+				66D30208151213BB00377D6B /* thumbnailMask.png */,
+				66D301EF15120F2400377D6B /* thumbnailMask@2x.png */,
+				66D301F015120F2400377D6B /* logo.png */,
+				66D301F115120F2400377D6B /* logo@2x.png */,
+				66D301F215120F2400377D6B /* signInBtn_s@2x.png */,
+				66D301F315120F2400377D6B /* signInBtn_n@2x.png */,
+				66D301F415120F2400377D6B /* signInBtn_s.png */,
+				66D301F515120F2400377D6B /* signInBtn_n.png */,
+				66D301F615120F2400377D6B /* textLabelBg@2x.png */,
+				66D301F715120F2400377D6B /* textLabelBg.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		66CA212B150FF0D200913A85 /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				66CA2120150FC11500913A85 /* CustomCell.h */,
+				66CA2121150FC11500913A85 /* CustomCell.m */,
+				66CA2123150FC13000913A85 /* CustomCell.xib */,
+				66CA2114150FB5FB00913A85 /* Global.h */,
+			);
+			name = SubClass;
+			sourceTree = "<group>";
+		};
+		66D301E41511F5D200377D6B /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				66D301E51511F5D200377D6B /* NSData+MD5.h */,
+				66D301E61511F5D200377D6B /* NSData+MD5.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66CA204D150FAA7800913A85 /* GM_EVNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66CA2066150FAA7800913A85 /* Build configuration list for PBXNativeTarget "GM_EVNote" */;
+			buildPhases = (
+				66CA204A150FAA7800913A85 /* Sources */,
+				66CA204B150FAA7800913A85 /* Frameworks */,
+				66CA204C150FAA7800913A85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GM_EVNote;
+			productName = EvernoteSample;
+			productReference = 66CA204E150FAA7800913A85 /* GM_EVNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66CA2045150FAA7800913A85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Greenmonster, Inc.";
+			};
+			buildConfigurationList = 66CA2048150FAA7800913A85 /* Build configuration list for PBXProject "GM_EVNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 66CA2043150FAA7800913A85;
+			productRefGroup = 66CA204F150FAA7800913A85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66CA204D150FAA7800913A85 /* GM_EVNote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66CA204C150FAA7800913A85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CA205D150FAA7800913A85 /* InfoPlist.strings in Resources */,
+				66CA2124150FC13000913A85 /* CustomCell.xib in Resources */,
+				66D301F815120F2400377D6B /* cameraBtn_s@2x.png in Resources */,
+				66D301F915120F2400377D6B /* cameraBtn_n@2x.png in Resources */,
+				66D301FA15120F2400377D6B /* cameraBtn_s.png in Resources */,
+				66D301FB15120F2400377D6B /* cameraBtn_n.png in Resources */,
+				66D301FC15120F2400377D6B /* titleLabelBg@2x.png in Resources */,
+				66D301FD15120F2400377D6B /* titleLabelBg.png in Resources */,
+				66D301FF15120F2400377D6B /* thumbnailMask@2x.png in Resources */,
+				66D3020015120F2400377D6B /* logo.png in Resources */,
+				66D3020115120F2400377D6B /* logo@2x.png in Resources */,
+				66D3020215120F2400377D6B /* signInBtn_s@2x.png in Resources */,
+				66D3020315120F2400377D6B /* signInBtn_n@2x.png in Resources */,
+				66D3020415120F2400377D6B /* signInBtn_s.png in Resources */,
+				66D3020515120F2400377D6B /* signInBtn_n.png in Resources */,
+				66D3020615120F2400377D6B /* textLabelBg@2x.png in Resources */,
+				66D3020715120F2400377D6B /* textLabelBg.png in Resources */,
+				66D30209151213BB00377D6B /* thumbnailMask.png in Resources */,
+				667F70F01512D0F900029BB8 /* thumbnail_dummy.png in Resources */,
+				66A02E2C1513259A006A706B /* icon@2x.png in Resources */,
+				66A02E2F151325A3006A706B /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66CA204A150FAA7800913A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CA205F150FAA7800913A85 /* main.m in Sources */,
+				66CA2063150FAA7800913A85 /* AppDelegate.m in Sources */,
+				66CA20B1150FB0F500913A85 /* ENManager.m in Sources */,
+				66CA20E4150FB1CB00913A85 /* TBinaryProtocol.m in Sources */,
+				66CA20E5150FB1CB00913A85 /* TProtocolException.m in Sources */,
+				66CA20E6150FB1CB00913A85 /* TProtocolUtil.m in Sources */,
+				66CA20E7150FB1CB00913A85 /* TApplicationException.m in Sources */,
+				66CA20E8150FB1CB00913A85 /* TException.m in Sources */,
+				66CA20E9150FB1CB00913A85 /* THTTPClient.m in Sources */,
+				66CA20EA150FB1CB00913A85 /* TMemoryBuffer.m in Sources */,
+				66CA20EB150FB1CB00913A85 /* TTransportException.m in Sources */,
+				66CA20EC150FB1CB00913A85 /* TSharedProcessorFactory.m in Sources */,
+				66CA20F8150FB23100913A85 /* EDAMLimits.m in Sources */,
+				66CA20F9150FB23100913A85 /* Errors.m in Sources */,
+				66CA20FA150FB23100913A85 /* NoteStore.m in Sources */,
+				66CA20FB150FB23100913A85 /* Types.m in Sources */,
+				66CA20FC150FB23100913A85 /* UserStore.m in Sources */,
+				66CA20FF150FB25C00913A85 /* LoginViewController.m in Sources */,
+				66CA211C150FB84B00913A85 /* NotebookListViewController.m in Sources */,
+				66CA2122150FC11500913A85 /* CustomCell.m in Sources */,
+				66CA2127150FC3C200913A85 /* NoteListViewController.m in Sources */,
+				66CA212A150FC74000913A85 /* NoteViewController.m in Sources */,
+				66D301E71511F5D200377D6B /* NSData+MD5.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66CA205B150FAA7800913A85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66CA205C150FAA7800913A85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66CA2064150FAA7800913A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66CA2065150FAA7800913A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66CA2067150FAA7800913A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EvernoteSample/GM_EVNote-Prefix.pch";
+				INFOPLIST_FILE = "EvernoteSample/GM_EVNote-Info.plist";
+				PRODUCT_NAME = GM_EVNote;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		66CA2068150FAA7800913A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EvernoteSample/GM_EVNote-Prefix.pch";
+				INFOPLIST_FILE = "EvernoteSample/GM_EVNote-Info.plist";
+				PRODUCT_NAME = GM_EVNote;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66CA2048150FAA7800913A85 /* Build configuration list for PBXProject "GM_EVNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CA2064150FAA7800913A85 /* Debug */,
+				66CA2065150FAA7800913A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66CA2066150FAA7800913A85 /* Build configuration list for PBXNativeTarget "GM_EVNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CA2067150FAA7800913A85 /* Debug */,
+				66CA2068150FAA7800913A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66CA2045150FAA7800913A85 /* Project object */;
+}
